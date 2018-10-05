@@ -1,3 +1,14 @@
 {
-    "modifications": []
+    "modifications": [
+        {
+            "type": "insertAfterNode",
+            "path": "/portal/producto",
+            "value": {
+                "cms": {
+                    "url": "^cms$",
+                    "func": "cms"
+                }
+            }
+        }
+    ]
 }

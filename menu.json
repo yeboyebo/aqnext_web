@@ -1,0 +1,48 @@
+{
+  "main": [
+    {
+      "name": "Inicio",
+      "url": "/",
+      "icon": "",
+      "key": "0"
+    },
+    {
+      "name": "¿Qué es AQNext?",
+      "url": "/cms?id=1",
+      "icon": "",
+      "key": "1"
+    },
+    {
+      "name": "Tarifas",
+      "url": "/cms?id=2",
+      "icon": "",
+      "key": "6"
+    }
+  ],
+  "secondary":[
+    {
+        "name": "Obtener AQNext",
+        "url": "/cms?id=3",
+        "icon": "",
+        "key": "2"
+    },
+    {
+        "name": "Comunidad",
+        "url": "#",
+        "icon": "",
+        "key": "3"
+    },
+    {
+        "name": "Pruébalo gratis",
+        "url": "http://demo.yeboyebo.es",
+        "icon": "",
+        "key": "5"
+    },
+    {
+        "name": "Iniciar Sesion",
+        "url": "/login",
+        "icon": "",
+        "key": "7"
+    }
+    ]
+}

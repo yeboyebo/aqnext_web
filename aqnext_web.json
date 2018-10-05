@@ -15,10 +15,52 @@
             {
                 "path": "config/",
                 "name": "dependencias.json"
+            },
+            {
+                "path": "assets/dist/img/logo/",
+                "name": "logo.png"
             }
         ],
-        "addFile": [],
-        "patchScript": []
+        "addFile": [
+            {
+                "path": "assets/dist/js/",
+                "name": "menu.json"
+            },
+            {
+                "path": "apps/portal/templates/portal/",
+                "name": "app_portal__cms.html"
+            },
+            {
+                "path": "assets/dist/img/logo/",
+                "name": "loading.gif"
+            },
+            {
+                "path": "assets/dist/img/slider/",
+                "name": "image2.jpg"
+            },
+            {
+                "path": "assets/dist/img/slider/",
+                "name": "image1.jpg"
+            },
+            {
+                "name": "cms-1.html",
+                "path": "assets/dist/html/"
+            },
+            {
+                "name": "cms-2.html",
+                "path": "assets/dist/html/"
+            },
+            {
+                "name": "cms-3.html",
+                "path": "assets/dist/html/"
+            }
+        ],
+        "patchScript": [
+            {
+                "path": "apps/portal/viewset/",
+                "name": "app_portal__views_portal.py"
+            }
+        ]
     },
     "name": "aqnext_web"
 }

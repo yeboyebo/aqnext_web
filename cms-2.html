@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Precios</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<form class="openerp_enterprise_pricing_form form-inline" method="post" action="pricing/checkout">
+                <input type="hidden" class="no_serialize" name="csrf_token" value="fffef12bcf27ae20019cb270fb1dc19b362f383bo1538474253">
+                
+                <input type="hidden" name="pl" value="77">
+                <h1 class="mt32">Precios de AQNext</h1>
+                <div class="row">
+                  <div class="col-md-9 col-xs-12">
+                    <div class="openerp_enterprise_pricing_hide_alert hidden">
+                      <p><a href="/contactus">Contáctenos</a> para obtener nuestros precios en la nube</p>
+                      <p>O revisa nuestros precios para soluciones locales usando la siguiente opción.</p>
+                    </div>
+                    <div class="openerp_enterprise_pricing_step">
+                      <div class="openerp_enterprise_pricing_step_head">
+                        <h3 class="mt16 mb8 text-violet-dark">Elige el número de <b>usuarios</b></h3>
+                      </div>
+                      <div class="openerp_enterprise_pricing_step_body form-group mb16 bg-gray-lighter" style="width:100%;">
+                        <input class="openerp_enterprise_pricing_users form-control text-right" id="users" name="num_users" type="number" min="1" value="1">
+                        <label class="control-label">
+                            Usuarios x
+                            <b class="openerp_enterprise_user_pricing_monthly hidden">
+                              <span class="openerp_enterprise_pricing_user_amount_monthly">12,50</span>&nbsp;<span class="openerp_enterprise_pricing_currency">EUR</span>/mes
+ &nbsp;&nbsp;
+                              <del class="text-danger"><span class="openerp_enterprise_pricing_user_amount_monthly_full">15,00</span>&nbsp;<span class="openerp_enterprise_pricing_currency">EUR</span>/mes</del>
+                            </b>
+                            <b class="openerp_enterprise_user_pricing_yearly">
+                              <span class="openerp_enterprise_pricing_user_amount_yearly">10,00</span>&nbsp;<span class="openerp_enterprise_pricing_currency">EUR</span>/mes
+ &nbsp;&nbsp;
+                              <del class="text-danger"><span class="openerp_enterprise_pricing_user_amount_yearly_full">12,00</span>&nbsp;<span class="openerp_enterprise_pricing_currency">EUR</span>/mes</del>
+                            </b>
+                          </label>
+                      </div>
+                    </div>
+                    <div class="openerp_enterprise_pricing_step">
+                      <div class="openerp_enterprise_pricing_step_head">
+                        <h3 class="mt16 mb16 text-violet-dark">Elige tus <b>Aplicaciones</b></h3>
+                      </div>
+                      <div class="openerp_enterprise_pricing_step_body mb24">
+                        <div class="row">
+                          
+        <label class="col-sm-4 openerp_enterprise_pricing_app" for="app_crm">
+            <div class="row">
+                <div class="col-xs-3 openerp_enterprise_pricing_app_icon">
+                    <img class="img-responsive icon_radius" src="//odoocdn.com/openerp_website/static/src/img/icons/apps/crm.png">
+                </div>
+                <div class="col-xs-7 openerp_enterprise_pricing_app_name">
+                    <div class="openerp_enterprise_pricing_app_real_name">
+                        <span>CRM</span>
+                        
+                        
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hidden hide_monthly_apps">
+                        <b><span class="amount_to_localize">15,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hide_yearly_apps">
+                        <b><span class="amount_to_localize">12,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <input type="checkbox" class="openerp_enterprise_pricing_app_checkbox" name="app_crm" id="app_crm" data-app-name="crm" data-app-depends="">
+                </div>
+            </div>
+        </label>
+    
+                          
+        <label class="col-sm-4 openerp_enterprise_pricing_app" for="app_account">
+            <div class="row">
+                <div class="col-xs-3 openerp_enterprise_pricing_app_icon">
+                    <img class="img-responsive icon_radius" src="//odoocdn.com/openerp_website/static/src/img/icons/apps/account.png">
+                </div>
+                <div class="col-xs-7 openerp_enterprise_pricing_app_name">
+                    <div class="openerp_enterprise_pricing_app_real_name">
+                        <span>Facturación</span>
+                        
+                        
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hidden hide_monthly_apps">
+                        <b><span class="amount_to_localize">7,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hide_yearly_apps">
+                        <b><span class="amount_to_localize">6,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <input type="checkbox" class="openerp_enterprise_pricing_app_checkbox" name="app_account" id="app_account" data-app-name="account" data-app-depends="">
+                </div>
+            </div>
+        </label>
+    
+                          
+        <label class="col-sm-4 openerp_enterprise_pricing_app" for="app_sale">
+            <div class="row">
+                <div class="col-xs-3 openerp_enterprise_pricing_app_icon">
+                    <img class="img-responsive icon_radius" src="//odoocdn.com/openerp_website/static/src/img/icons/apps/sale.png">
+                </div>
+                <div class="col-xs-7 openerp_enterprise_pricing_app_name">
+                    <div class="openerp_enterprise_pricing_app_real_name">
+                        <span>Ventas</span>
+                        
+                        
+                            <i class="fa fa-1x fa-link hidden-md" data-toggle="tooltip" title="" data-original-title="Requires: Facturación"></i>
+                        
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hidden hide_monthly_apps">
+                        <b><span class="amount_to_localize">7,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hide_yearly_apps">
+                        <b><span class="amount_to_localize">6,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <input type="checkbox" class="openerp_enterprise_pricing_app_checkbox" name="app_sale" id="app_sale" data-app-name="sale" data-app-depends="account">
+                </div>
+            </div>
+        </label>
+    
+                        </div>
+                        <div class="row">
+                          
+        <label class="col-sm-4 openerp_enterprise_pricing_app" for="app_website">
+            <div class="row">
+                <div class="col-xs-3 openerp_enterprise_pricing_app_icon">
+                    <img class="img-responsive icon_radius" src="//odoocdn.com/openerp_website/static/src/img/icons/apps/website.png">
+                </div>
+                <div class="col-xs-7 openerp_enterprise_pricing_app_name">
+                    <div class="openerp_enterprise_pricing_app_real_name">
+                        <span>Web</span>
+                        
+                        
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hidden hide_monthly_apps">
+                        <b><span class="amount_to_localize">15,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hide_yearly_apps">
+                        <b><span class="amount_to_localize">12,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <input type="checkbox" class="openerp_enterprise_pricing_app_checkbox" name="app_website" id="app_website" data-app-name="website" data-app-depends="">
+                </div>
+            </div>
+        </label>
+    
+                          
+        <label class="col-sm-4 openerp_enterprise_pricing_app" for="app_website_sale">
+            <div class="row">
+                <div class="col-xs-3 openerp_enterprise_pricing_app_icon">
+                    <img class="img-responsive icon_radius" src="//odoocdn.com/openerp_website/static/src/img/icons/apps/website_sale.png">
+                </div>
+                <div class="col-xs-7 openerp_enterprise_pricing_app_name">
+                    <div class="openerp_enterprise_pricing_app_real_name">
+                        <span>Comercio electrónico</span>
+                        
+                        
+                            <i class="fa fa-1x fa-link hidden-md" data-toggle="tooltip" title="" data-original-title="Requires: Web"></i>
+                        
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hidden hide_monthly_apps">
+                        <b><span class="amount_to_localize">7,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hide_yearly_apps">
+                        <b><span class="amount_to_localize">6,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <input type="checkbox" class="openerp_enterprise_pricing_app_checkbox" name="app_website_sale" id="app_website_sale" data-app-name="website_sale" data-app-depends="website">
+                </div>
+            </div>
+        </label>
+    
+                          
+        <label class="col-sm-4 openerp_enterprise_pricing_app" for="app_point_of_sale">
+            <div class="row">
+                <div class="col-xs-3 openerp_enterprise_pricing_app_icon">
+                    <img class="img-responsive icon_radius" src="//odoocdn.com/openerp_website/static/src/img/icons/apps/point_of_sale.png">
+                </div>
+                <div class="col-xs-7 openerp_enterprise_pricing_app_name">
+                    <div class="openerp_enterprise_pricing_app_real_name">
+                        <span>Punto de venta</span>
+                        
+                        
+                            <i class="fa fa-1x fa-link hidden-md" data-toggle="tooltip" title="" data-original-title="Requires: Inventario"></i>
+                        
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hidden hide_monthly_apps">
+                        <b><span class="amount_to_localize">15,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hide_yearly_apps">
+                        <b><span class="amount_to_localize">12,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <input type="checkbox" class="openerp_enterprise_pricing_app_checkbox" name="app_point_of_sale" id="app_point_of_sale" data-app-name="point_of_sale" data-app-depends="stock">
+                </div>
+            </div>
+        </label>
+    
+                        </div>
+                        <div class="row">
+                          
+        <label class="col-sm-4 openerp_enterprise_pricing_app" for="app_account_accountant">
+            <div class="row">
+                <div class="col-xs-3 openerp_enterprise_pricing_app_icon">
+                    <img class="img-responsive icon_radius" src="//odoocdn.com/openerp_website/static/src/img/icons/apps/account_accountant.png">
+                </div>
+                <div class="col-xs-7 openerp_enterprise_pricing_app_name">
+                    <div class="openerp_enterprise_pricing_app_real_name">
+                        <span>Contabilidad</span>
+                        
+                        
+                            <i class="fa fa-1x fa-link hidden-md" data-toggle="tooltip" title="" data-original-title="Requires: Facturación"></i>
+                        
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hidden hide_monthly_apps">
+                        <b><span class="amount_to_localize">15,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hide_yearly_apps">
+                        <b><span class="amount_to_localize">12,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <input type="checkbox" class="openerp_enterprise_pricing_app_checkbox" name="app_account_accountant" id="app_account_accountant" data-app-name="account_accountant" data-app-depends="account">
+                </div>
+            </div>
+        </label>
+    
+                          
+        <label class="col-sm-4 openerp_enterprise_pricing_app" for="app_project">
+            <div class="row">
+                <div class="col-xs-3 openerp_enterprise_pricing_app_icon">
+                    <img class="img-responsive icon_radius" src="//odoocdn.com/openerp_website/static/src/img/icons/apps/project.png">
+                </div>
+                <div class="col-xs-7 openerp_enterprise_pricing_app_name">
+                    <div class="openerp_enterprise_pricing_app_real_name">
+                        <span>Proyecto</span>
+                        
+                        
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hidden hide_monthly_apps">
+                        <b><span class="amount_to_localize">15,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hide_yearly_apps">
+                        <b><span class="amount_to_localize">12,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <input type="checkbox" class="openerp_enterprise_pricing_app_checkbox" name="app_project" id="app_project" data-app-name="project" data-app-depends="">
+                </div>
+            </div>
+        </label>
+    
+                          
+        <label class="col-sm-4 openerp_enterprise_pricing_app" for="app_stock">
+            <div class="row">
+                <div class="col-xs-3 openerp_enterprise_pricing_app_icon">
+                    <img class="img-responsive icon_radius" src="//odoocdn.com/openerp_website/static/src/img/icons/apps/stock.png">
+                </div>
+                <div class="col-xs-7 openerp_enterprise_pricing_app_name">
+                    <div class="openerp_enterprise_pricing_app_real_name">
+                        <span>Inventario</span>
+                        
+                        
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hidden hide_monthly_apps">
+                        <b><span class="amount_to_localize">22,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hide_yearly_apps">
+                        <b><span class="amount_to_localize">18,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <input type="checkbox" class="openerp_enterprise_pricing_app_checkbox" name="app_stock" id="app_stock" data-app-name="stock" data-app-depends="">
+                </div>
+            </div>
+        </label>
+    
+                        </div>
+                        <div class="row">
+                          
+        <label class="col-sm-4 openerp_enterprise_pricing_app" for="app_mrp">
+            <div class="row">
+                <div class="col-xs-3 openerp_enterprise_pricing_app_icon">
+                    <img class="img-responsive icon_radius" src="//odoocdn.com/openerp_website/static/src/img/icons/apps/mrp.png">
+                </div>
+                <div class="col-xs-7 openerp_enterprise_pricing_app_name">
+                    <div class="openerp_enterprise_pricing_app_real_name">
+                        <span>Fabricación</span>
+                        
+                        
+                            <i class="fa fa-1x fa-link hidden-md" data-toggle="tooltip" title="" data-original-title="Requires: Inventario"></i>
+                        
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hidden hide_monthly_apps">
+                        <b><span class="amount_to_localize">30,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hide_yearly_apps">
+                        <b><span class="amount_to_localize">24,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <input type="checkbox" class="openerp_enterprise_pricing_app_checkbox" name="app_mrp" id="app_mrp" data-app-name="mrp" data-app-depends="stock">
+                </div>
+            </div>
+        </label>
+    
+                          
+        <label class="col-sm-4 openerp_enterprise_pricing_app" for="app_purchase">
+            <div class="row">
+                <div class="col-xs-3 openerp_enterprise_pricing_app_icon">
+                    <img class="img-responsive icon_radius" src="//odoocdn.com/openerp_website/static/src/img/icons/apps/purchase.png">
+                </div>
+                <div class="col-xs-7 openerp_enterprise_pricing_app_name">
+                    <div class="openerp_enterprise_pricing_app_real_name">
+                        <span>Compra</span>
+                        
+                        
+                            <i class="fa fa-1x fa-link hidden-md" data-toggle="tooltip" title="" data-original-title="Requires: Inventario"></i>
+                        
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hidden hide_monthly_apps">
+                        <b><span class="amount_to_localize">7,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hide_yearly_apps">
+                        <b><span class="amount_to_localize">6,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <input type="checkbox" class="openerp_enterprise_pricing_app_checkbox" name="app_purchase" id="app_purchase" data-app-name="purchase" data-app-depends="stock">
+                </div>
+            </div>
+        </label>
+    
+                          
+        <label class="col-sm-4 openerp_enterprise_pricing_app" for="app_timesheet_grid">
+            <div class="row">
+                <div class="col-xs-3 openerp_enterprise_pricing_app_icon">
+                    <img class="img-responsive icon_radius" src="//odoocdn.com/openerp_website/static/src/img/icons/apps/timesheet_grid.png">
+                </div>
+                <div class="col-xs-7 openerp_enterprise_pricing_app_name">
+                    <div class="openerp_enterprise_pricing_app_real_name">
+                        <span>Hoja de horas</span>
+                        
+                        
+                            <i class="fa fa-1x fa-link hidden-md" data-toggle="tooltip" title="" data-original-title="Requires: Proyecto"></i>
+                        
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hidden hide_monthly_apps">
+                        <b><span class="amount_to_localize">7,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hide_yearly_apps">
+                        <b><span class="amount_to_localize">6,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <input type="checkbox" class="openerp_enterprise_pricing_app_checkbox" name="app_timesheet_grid" id="app_timesheet_grid" data-app-name="timesheet_grid" data-app-depends="project">
+                </div>
+            </div>
+        </label>
+    
+                        </div>
+                        <div class="row">
+                          
+        <label class="col-sm-4 openerp_enterprise_pricing_app" for="app_mass_mailing">
+            <div class="row">
+                <div class="col-xs-3 openerp_enterprise_pricing_app_icon">
+                    <img class="img-responsive icon_radius" src="//odoocdn.com/openerp_website/static/src/img/icons/apps/mass_mailing.png">
+                </div>
+                <div class="col-xs-7 openerp_enterprise_pricing_app_name">
+                    <div class="openerp_enterprise_pricing_app_real_name">
+                        <span>Marketing electrónico</span>
+                        
+                        
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hidden hide_monthly_apps">
+                        <b><span class="amount_to_localize">7,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hide_yearly_apps">
+                        <b><span class="amount_to_localize">6,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <input type="checkbox" class="openerp_enterprise_pricing_app_checkbox" name="app_mass_mailing" id="app_mass_mailing" data-app-name="mass_mailing" data-app-depends="">
+                </div>
+            </div>
+        </label>
+    
+                          
+        <label class="col-sm-4 openerp_enterprise_pricing_app" for="app_hr_expense">
+            <div class="row">
+                <div class="col-xs-3 openerp_enterprise_pricing_app_icon">
+                    <img class="img-responsive icon_radius" src="//odoocdn.com/openerp_website/static/src/img/icons/apps/hr_expense.png">
+                </div>
+                <div class="col-xs-7 openerp_enterprise_pricing_app_name">
+                    <div class="openerp_enterprise_pricing_app_real_name">
+                        <span>Gastos</span>
+                        
+                        
+                            <i class="fa fa-1x fa-link hidden-md" data-toggle="tooltip" title="" data-original-title="Requires: Facturación"></i>
+                        
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hidden hide_monthly_apps">
+                        <b><span class="amount_to_localize">7,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hide_yearly_apps">
+                        <b><span class="amount_to_localize">6,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <input type="checkbox" class="openerp_enterprise_pricing_app_checkbox" name="app_hr_expense" id="app_hr_expense" data-app-name="hr_expense" data-app-depends="account">
+                </div>
+            </div>
+        </label>
+    
+                          
+        <label class="col-sm-4 openerp_enterprise_pricing_app" for="app_website_event">
+            <div class="row">
+                <div class="col-xs-3 openerp_enterprise_pricing_app_icon">
+                    <img class="img-responsive icon_radius" src="//odoocdn.com/openerp_website/static/src/img/icons/apps/website_event.png">
+                </div>
+                <div class="col-xs-7 openerp_enterprise_pricing_app_name">
+                    <div class="openerp_enterprise_pricing_app_real_name">
+                        <span>Eventos</span>
+                        
+                        
+                            <i class="fa fa-1x fa-link hidden-md" data-toggle="tooltip" title="" data-original-title="Requires: Web"></i>
+                        
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hidden hide_monthly_apps">
+                        <b><span class="amount_to_localize">7,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hide_yearly_apps">
+                        <b><span class="amount_to_localize">6,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <input type="checkbox" class="openerp_enterprise_pricing_app_checkbox" name="app_website_event" id="app_website_event" data-app-name="website_event" data-app-depends="website">
+                </div>
+            </div>
+        </label>
+    
+                        </div>
+                        <div class="row">
+                          
+        <label class="col-sm-4 openerp_enterprise_pricing_app" for="app_hr_holidays">
+            <div class="row">
+                <div class="col-xs-3 openerp_enterprise_pricing_app_icon">
+                    <img class="img-responsive icon_radius" src="//odoocdn.com/openerp_website/static/src/img/icons/apps/hr_holidays.png">
+                </div>
+                <div class="col-xs-7 openerp_enterprise_pricing_app_name">
+                    <div class="openerp_enterprise_pricing_app_real_name">
+                        <span>Permisos</span>
+                        
+                        
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hidden hide_monthly_apps">
+                        <b><span class="amount_to_localize">7,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hide_yearly_apps">
+                        <b><span class="amount_to_localize">6,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <input type="checkbox" class="openerp_enterprise_pricing_app_checkbox" name="app_hr_holidays" id="app_hr_holidays" data-app-name="hr_holidays" data-app-depends="">
+                </div>
+            </div>
+        </label>
+    
+                          
+        <label class="col-sm-4 openerp_enterprise_pricing_app" for="app_hr_recruitment">
+            <div class="row">
+                <div class="col-xs-3 openerp_enterprise_pricing_app_icon">
+                    <img class="img-responsive icon_radius" src="//odoocdn.com/openerp_website/static/src/img/icons/apps/hr_recruitment.png">
+                </div>
+                <div class="col-xs-7 openerp_enterprise_pricing_app_name">
+                    <div class="openerp_enterprise_pricing_app_real_name">
+                        <span>Contratación</span>
+                        
+                        
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hidden hide_monthly_apps">
+                        <b><span class="amount_to_localize">7,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hide_yearly_apps">
+                        <b><span class="amount_to_localize">6,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <input type="checkbox" class="openerp_enterprise_pricing_app_checkbox" name="app_hr_recruitment" id="app_hr_recruitment" data-app-name="hr_recruitment" data-app-depends="">
+                </div>
+            </div>
+        </label>
+    
+                          
+        <label class="col-sm-4 openerp_enterprise_pricing_app" for="app_hr_appraisal">
+            <div class="row">
+                <div class="col-xs-3 openerp_enterprise_pricing_app_icon">
+                    <img class="img-responsive icon_radius" src="//odoocdn.com/openerp_website/static/src/img/icons/apps/hr_appraisal.png">
+                </div>
+                <div class="col-xs-7 openerp_enterprise_pricing_app_name">
+                    <div class="openerp_enterprise_pricing_app_real_name">
+                        <span>Valoración</span>
+                        
+                        
+                            <i class="fa fa-1x fa-link hidden-md" data-toggle="tooltip" title="" data-original-title="Requires: Web"></i>
+                        
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hidden hide_monthly_apps">
+                        <b><span class="amount_to_localize">7,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hide_yearly_apps">
+                        <b><span class="amount_to_localize">6,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <input type="checkbox" class="openerp_enterprise_pricing_app_checkbox" name="app_hr_appraisal" id="app_hr_appraisal" data-app-name="hr_appraisal" data-app-depends="website">
+                </div>
+            </div>
+        </label>
+    
+                        </div>
+                        <div class="row">
+                          
+        <label class="col-sm-4 openerp_enterprise_pricing_app" for="app_sale_subscription">
+            <div class="row">
+                <div class="col-xs-3 openerp_enterprise_pricing_app_icon">
+                    <img class="img-responsive icon_radius" src="//odoocdn.com/openerp_website/static/src/img/icons/apps/sale_subscription.png">
+                </div>
+                <div class="col-xs-7 openerp_enterprise_pricing_app_name">
+                    <div class="openerp_enterprise_pricing_app_real_name">
+                        <span>Suscripción</span>
+                        
+                        
+                            <i class="fa fa-1x fa-link hidden-md" data-toggle="tooltip" title="" data-original-title="Requires: Ventas, Facturación"></i>
+                        
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hidden hide_monthly_apps">
+                        <b><span class="amount_to_localize">15,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hide_yearly_apps">
+                        <b><span class="amount_to_localize">12,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <input type="checkbox" class="openerp_enterprise_pricing_app_checkbox" name="app_sale_subscription" id="app_sale_subscription" data-app-name="sale_subscription" data-app-depends="sale,account">
+                </div>
+            </div>
+        </label>
+    
+                          
+        <label class="col-sm-4 openerp_enterprise_pricing_app" for="app_website_sign">
+            <div class="row">
+                <div class="col-xs-3 openerp_enterprise_pricing_app_icon">
+                    <img class="img-responsive icon_radius" src="//odoocdn.com/openerp_website/static/src/img/icons/apps/website_sign.png">
+                </div>
+                <div class="col-xs-7 openerp_enterprise_pricing_app_name">
+                    <div class="openerp_enterprise_pricing_app_real_name">
+                        <span>Firmar</span>
+                        
+                        
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hidden hide_monthly_apps">
+                        <b><span class="amount_to_localize">15,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hide_yearly_apps">
+                        <b><span class="amount_to_localize">12,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <input type="checkbox" class="openerp_enterprise_pricing_app_checkbox" name="app_website_sign" id="app_website_sign" data-app-name="website_sign" data-app-depends="">
+                </div>
+            </div>
+        </label>
+    
+                          
+        <label class="col-sm-4 openerp_enterprise_pricing_app" for="app_maintenance">
+            <div class="row">
+                <div class="col-xs-3 openerp_enterprise_pricing_app_icon">
+                    <img class="img-responsive icon_radius" src="//odoocdn.com/openerp_website/static/src/img/icons/apps/maintenance.png">
+                </div>
+                <div class="col-xs-7 openerp_enterprise_pricing_app_name">
+                    <div class="openerp_enterprise_pricing_app_real_name">
+                        <span>Equipamiento</span>
+                        
+                        
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hidden hide_monthly_apps">
+                        <b><span class="amount_to_localize">7,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hide_yearly_apps">
+                        <b><span class="amount_to_localize">6,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <input type="checkbox" class="openerp_enterprise_pricing_app_checkbox" name="app_maintenance" id="app_maintenance" data-app-name="maintenance" data-app-depends="">
+                </div>
+            </div>
+        </label>
+    
+                        </div>
+                        <div class="row">
+                          
+        <label class="col-sm-4 openerp_enterprise_pricing_app" for="app_quality">
+            <div class="row">
+                <div class="col-xs-3 openerp_enterprise_pricing_app_icon">
+                    <img class="img-responsive icon_radius" src="//odoocdn.com/openerp_website/static/src/img/icons/apps/quality.png">
+                </div>
+                <div class="col-xs-7 openerp_enterprise_pricing_app_name">
+                    <div class="openerp_enterprise_pricing_app_real_name">
+                        <span>Control de Calidad</span>
+                        
+                        
+                            <i class="fa fa-1x fa-link hidden-md" data-toggle="tooltip" title="" data-original-title="Requires: Inventario"></i>
+                        
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hidden hide_monthly_apps">
+                        <b><span class="amount_to_localize">15,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hide_yearly_apps">
+                        <b><span class="amount_to_localize">12,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <input type="checkbox" class="openerp_enterprise_pricing_app_checkbox" name="app_quality" id="app_quality" data-app-name="quality" data-app-depends="stock">
+                </div>
+            </div>
+        </label>
+    
+                          
+        <label class="col-sm-4 openerp_enterprise_pricing_app" for="app_web_studio">
+            <div class="row">
+                <div class="col-xs-3 openerp_enterprise_pricing_app_icon">
+                    <img class="img-responsive icon_radius" src="//odoocdn.com/openerp_website/static/src/img/icons/apps/web_studio.png">
+                </div>
+                <div class="col-xs-7 openerp_enterprise_pricing_app_name">
+                    <div class="openerp_enterprise_pricing_app_real_name">
+                        <span>Studio</span>
+                        
+                        
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hidden hide_monthly_apps">
+                        <b><span class="amount_to_localize">45,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hide_yearly_apps">
+                        <b><span class="amount_to_localize">36,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <input type="checkbox" class="openerp_enterprise_pricing_app_checkbox" name="app_web_studio" id="app_web_studio" data-app-name="web_studio" data-app-depends="">
+                </div>
+            </div>
+        </label>
+    
+                          
+        <label class="col-sm-4 openerp_enterprise_pricing_app" for="app_helpdesk">
+            <div class="row">
+                <div class="col-xs-3 openerp_enterprise_pricing_app_icon">
+                    <img class="img-responsive icon_radius" src="//odoocdn.com/openerp_website/static/src/img/icons/apps/helpdesk.png">
+                </div>
+                <div class="col-xs-7 openerp_enterprise_pricing_app_name">
+                    <div class="openerp_enterprise_pricing_app_real_name">
+                        <span>Servicio de asistencia</span>
+                        
+                        
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hidden hide_monthly_apps">
+                        <b><span class="amount_to_localize">15,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hide_yearly_apps">
+                        <b><span class="amount_to_localize">12,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <input type="checkbox" class="openerp_enterprise_pricing_app_checkbox" name="app_helpdesk" id="app_helpdesk" data-app-name="helpdesk" data-app-depends="">
+                </div>
+            </div>
+        </label>
+    
+                        </div>
+                        <div class="row">
+                          
+        <label class="col-sm-4 openerp_enterprise_pricing_app" for="app_mrp_maintenance">
+            <div class="row">
+                <div class="col-xs-3 openerp_enterprise_pricing_app_icon">
+                    <img class="img-responsive icon_radius" src="//odoocdn.com/openerp_website/static/src/img/icons/apps/mrp_maintenance.png">
+                </div>
+                <div class="col-xs-7 openerp_enterprise_pricing_app_name">
+                    <div class="openerp_enterprise_pricing_app_real_name">
+                        <span>Mantenimiento (Manufactura)</span>
+                        
+                        
+                            <i class="fa fa-1x fa-link hidden-md" data-toggle="tooltip" title="" data-original-title="Requires: Equipamiento, Control de Calidad, Inventario, Fabricación"></i>
+                        
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hidden hide_monthly_apps">
+                        <b><span class="amount_to_localize">15,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hide_yearly_apps">
+                        <b><span class="amount_to_localize">12,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <input type="checkbox" class="openerp_enterprise_pricing_app_checkbox" name="app_mrp_maintenance" id="app_mrp_maintenance" data-app-name="mrp_maintenance" data-app-depends="maintenance,quality,stock,mrp">
+                </div>
+            </div>
+        </label>
+    
+                          
+        <label class="col-sm-4 openerp_enterprise_pricing_app" for="app_mrp_plm">
+            <div class="row">
+                <div class="col-xs-3 openerp_enterprise_pricing_app_icon">
+                    <img class="img-responsive icon_radius" src="//odoocdn.com/openerp_website/static/src/img/icons/apps/mrp_plm.png">
+                </div>
+                <div class="col-xs-7 openerp_enterprise_pricing_app_name">
+                    <div class="openerp_enterprise_pricing_app_real_name">
+                        <span>PLM (Manufactura)</span>
+                        
+                        
+                            <i class="fa fa-1x fa-link hidden-md" data-toggle="tooltip" title="" data-original-title="Requires: Inventario, Fabricación"></i>
+                        
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hidden hide_monthly_apps">
+                        <b><span class="amount_to_localize">15,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hide_yearly_apps">
+                        <b><span class="amount_to_localize">12,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <input type="checkbox" class="openerp_enterprise_pricing_app_checkbox" name="app_mrp_plm" id="app_mrp_plm" data-app-name="mrp_plm" data-app-depends="stock,mrp">
+                </div>
+            </div>
+        </label>
+    
+                          
+        <label class="col-sm-4 openerp_enterprise_pricing_app" for="app_website_calendar">
+            <div class="row">
+                <div class="col-xs-3 openerp_enterprise_pricing_app_icon">
+                    <img class="img-responsive icon_radius" src="//odoocdn.com/openerp_website/static/src/img/icons/apps/website_calendar.png">
+                </div>
+                <div class="col-xs-7 openerp_enterprise_pricing_app_name">
+                    <div class="openerp_enterprise_pricing_app_real_name">
+                        <span>Programación de citas</span>
+                        
+                        
+                            <i class="fa fa-1x fa-link hidden-md" data-toggle="tooltip" title="" data-original-title="Requires: Web"></i>
+                        
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hidden hide_monthly_apps">
+                        <b><span class="amount_to_localize">7,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hide_yearly_apps">
+                        <b><span class="amount_to_localize">6,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <input type="checkbox" class="openerp_enterprise_pricing_app_checkbox" name="app_website_calendar" id="app_website_calendar" data-app-name="website_calendar" data-app-depends="website">
+                </div>
+            </div>
+        </label>
+    
+                        </div>
+                        <div class="row">
+                          
+        <label class="col-sm-4 openerp_enterprise_pricing_app" for="app_marketing_automation">
+            <div class="row">
+                <div class="col-xs-3 openerp_enterprise_pricing_app_icon">
+                    <img class="img-responsive icon_radius" src="//odoocdn.com/openerp_website/static/src/img/icons/apps/marketing_automation.png">
+                </div>
+                <div class="col-xs-7 openerp_enterprise_pricing_app_name">
+                    <div class="openerp_enterprise_pricing_app_real_name">
+                        <span>Automatización de marketing</span>
+                        
+                        
+                            <i class="fa fa-1x fa-link hidden-md" data-toggle="tooltip" title="" data-original-title="Requires: Marketing electrónico"></i>
+                        
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hidden hide_monthly_apps">
+                        <b><span class="amount_to_localize">22,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hide_yearly_apps">
+                        <b><span class="amount_to_localize">18,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <input type="checkbox" class="openerp_enterprise_pricing_app_checkbox" name="app_marketing_automation" id="app_marketing_automation" data-app-name="marketing_automation" data-app-depends="mass_mailing">
+                </div>
+            </div>
+        </label>
+    
+                        </div>
+                      </div>
+                      <div class="openerp_enterprise_pricing_step_head">
+                        <h3 class="mt16 mb16 text-violet-dark">Integraciones <b>extra</b></h3>
+                      </div>
+                      <div class="openerp_enterprise_pricing_step_body mb16">
+                        <div class="row">
+                          
+        <label class="col-sm-4 openerp_enterprise_pricing_app" for="app_delivery_dhl">
+            <div class="row">
+                <div class="col-xs-3 openerp_enterprise_pricing_app_icon">
+                    <img class="img-responsive icon_radius" src="//odoocdn.com/openerp_website/static/src/img/icons/apps/delivery_dhl.png">
+                </div>
+                <div class="col-xs-7 openerp_enterprise_pricing_app_name">
+                    <div class="openerp_enterprise_pricing_app_real_name">
+                        <span>DHL</span>
+                        
+                        
+                            <i class="fa fa-1x fa-link hidden-md" data-toggle="tooltip" title="" data-original-title="Requires: Ventas, Facturación, Inventario"></i>
+                        
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hidden hide_monthly_apps">
+                        <b><span class="amount_to_localize">22,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hide_yearly_apps">
+                        <b><span class="amount_to_localize">18,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <input type="checkbox" class="openerp_enterprise_pricing_app_checkbox" name="app_delivery_dhl" id="app_delivery_dhl" data-app-name="delivery_dhl" data-app-depends="sale,account,stock">
+                </div>
+            </div>
+        </label>
+    
+                          
+        <label class="col-sm-4 openerp_enterprise_pricing_app" for="app_delivery_ups">
+            <div class="row">
+                <div class="col-xs-3 openerp_enterprise_pricing_app_icon">
+                    <img class="img-responsive icon_radius" src="//odoocdn.com/openerp_website/static/src/img/icons/apps/delivery_ups.png">
+                </div>
+                <div class="col-xs-7 openerp_enterprise_pricing_app_name">
+                    <div class="openerp_enterprise_pricing_app_real_name">
+                        <span>UPS</span>
+                        
+                        
+                            <i class="fa fa-1x fa-link hidden-md" data-toggle="tooltip" title="" data-original-title="Requires: Ventas, Facturación, Inventario"></i>
+                        
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hidden hide_monthly_apps">
+                        <b><span class="amount_to_localize">22,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hide_yearly_apps">
+                        <b><span class="amount_to_localize">18,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <input type="checkbox" class="openerp_enterprise_pricing_app_checkbox" name="app_delivery_ups" id="app_delivery_ups" data-app-name="delivery_ups" data-app-depends="sale,account,stock">
+                </div>
+            </div>
+        </label>
+    
+                          
+        <label class="col-sm-4 openerp_enterprise_pricing_app" for="app_delivery_usps">
+            <div class="row">
+                <div class="col-xs-3 openerp_enterprise_pricing_app_icon">
+                    <img class="img-responsive icon_radius" src="//odoocdn.com/openerp_website/static/src/img/icons/apps/delivery_usps.png">
+                </div>
+                <div class="col-xs-7 openerp_enterprise_pricing_app_name">
+                    <div class="openerp_enterprise_pricing_app_real_name">
+                        <span>USPS</span>
+                        
+                        
+                            <i class="fa fa-1x fa-link hidden-md" data-toggle="tooltip" title="" data-original-title="Requires: Ventas, Facturación, Inventario"></i>
+                        
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hidden hide_monthly_apps">
+                        <b><span class="amount_to_localize">22,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hide_yearly_apps">
+                        <b><span class="amount_to_localize">18,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <input type="checkbox" class="openerp_enterprise_pricing_app_checkbox" name="app_delivery_usps" id="app_delivery_usps" data-app-name="delivery_usps" data-app-depends="sale,account,stock">
+                </div>
+            </div>
+        </label>
+    
+                        </div>
+                        <div class="row">
+                          
+        <label class="col-sm-4 openerp_enterprise_pricing_app" for="app_delivery_fedex">
+            <div class="row">
+                <div class="col-xs-3 openerp_enterprise_pricing_app_icon">
+                    <img class="img-responsive icon_radius" src="//odoocdn.com/openerp_website/static/src/img/icons/apps/delivery_fedex.png">
+                </div>
+                <div class="col-xs-7 openerp_enterprise_pricing_app_name">
+                    <div class="openerp_enterprise_pricing_app_real_name">
+                        <span>FedEx</span>
+                        
+                        
+                            <i class="fa fa-1x fa-link hidden-md" data-toggle="tooltip" title="" data-original-title="Requires: Ventas, Facturación, Inventario"></i>
+                        
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hidden hide_monthly_apps">
+                        <b><span class="amount_to_localize">22,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hide_yearly_apps">
+                        <b><span class="amount_to_localize">18,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <input type="checkbox" class="openerp_enterprise_pricing_app_checkbox" name="app_delivery_fedex" id="app_delivery_fedex" data-app-name="delivery_fedex" data-app-depends="sale,account,stock">
+                </div>
+            </div>
+        </label>
+    
+                          
+        <label class="col-sm-4 openerp_enterprise_pricing_app" for="app_sale_ebay">
+            <div class="row">
+                <div class="col-xs-3 openerp_enterprise_pricing_app_icon">
+                    <img class="img-responsive icon_radius" src="//odoocdn.com/openerp_website/static/src/img/icons/apps/sale_ebay.png">
+                </div>
+                <div class="col-xs-7 openerp_enterprise_pricing_app_name">
+                    <div class="openerp_enterprise_pricing_app_real_name">
+                        <span>Ebay</span>
+                        
+                        
+                            <i class="fa fa-1x fa-link hidden-md" data-toggle="tooltip" title="" data-original-title="Requires: Ventas, Facturación, Inventario"></i>
+                        
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hidden hide_monthly_apps">
+                        <b><span class="amount_to_localize">56,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hide_yearly_apps">
+                        <b><span class="amount_to_localize">44,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <input type="checkbox" class="openerp_enterprise_pricing_app_checkbox" name="app_sale_ebay" id="app_sale_ebay" data-app-name="sale_ebay" data-app-depends="sale,account,stock">
+                </div>
+            </div>
+        </label>
+    
+                          
+        <label class="col-sm-4 openerp_enterprise_pricing_app" for="app_crm_voip">
+            <div class="row">
+                <div class="col-xs-3 openerp_enterprise_pricing_app_icon">
+                    <img class="img-responsive icon_radius" src="//odoocdn.com/openerp_website/static/src/img/icons/apps/crm_voip.png">
+                </div>
+                <div class="col-xs-7 openerp_enterprise_pricing_app_name">
+                    <div class="openerp_enterprise_pricing_app_real_name">
+                        <span>VoIP (Asterisk)</span>
+                        
+                        
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hidden hide_monthly_apps">
+                        <b><span class="amount_to_localize">22,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hide_yearly_apps">
+                        <b><span class="amount_to_localize">18,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <input type="checkbox" class="openerp_enterprise_pricing_app_checkbox" name="app_crm_voip" id="app_crm_voip" data-app-name="crm_voip" data-app-depends="">
+                </div>
+            </div>
+        </label>
+    
+                        </div>
+                        <div class="row">
+                          
+        <label class="col-sm-4 openerp_enterprise_pricing_app" for="app_delivery_bpost">
+            <div class="row">
+                <div class="col-xs-3 openerp_enterprise_pricing_app_icon">
+                    <img class="img-responsive icon_radius" src="//odoocdn.com/openerp_website/static/src/img/icons/apps/delivery_bpost.png">
+                </div>
+                <div class="col-xs-7 openerp_enterprise_pricing_app_name">
+                    <div class="openerp_enterprise_pricing_app_real_name">
+                        <span>Bpost</span>
+                        
+                        
+                            <i class="fa fa-1x fa-link hidden-md" data-toggle="tooltip" title="" data-original-title="Requires: Ventas, Facturación, Inventario"></i>
+                        
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hidden hide_monthly_apps">
+                        <b><span class="amount_to_localize">22,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                    <div class="openerp_enterprise_pricing_app_price hide_yearly_apps">
+                        <b><span class="amount_to_localize">18,00</span> <span class="openerp_enterprise_pricing_currency">EUR</span></b> / mes
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <input type="checkbox" class="openerp_enterprise_pricing_app_checkbox" name="app_delivery_bpost" id="app_delivery_bpost" data-app-name="delivery_bpost" data-app-depends="sale,account,stock">
+                </div>
+            </div>
+        </label>
+    
+                        </div>
+                      </div>
+                    </div>
+                    <div class="openerp_enterprise_pricing_step">
+                      <div class="openerp_enterprise_pricing_step_head">
+                        <h3 class="mt16 mb8 text-violet-dark">Elija su <b>tipo de servidor</b></h3>
+                      </div>
+                      <div class="openerp_enterprise_pricing_step_body o_pricing_hosting mb16">
+                        <ul class="openerp_enterprise_hosting_list">
+                        <label class="control-label">
+                          <li><label><input type="radio" required="" name="hosting" class="openerp_enterprise_hosting_type" value="online" checked="True"> Almacenamiento en la nube <small>(gratis)</small></label>
+                          </li><li><label><input type="radio" required="" name="hosting" class="openerp_enterprise_hosting_type" value="on_premise"> <small>En sitio (gratis)</small></label>
+                          </li><li><label><input type="radio" required="" name="hosting" class="openerp_enterprise_hosting_type openerp_enterprise_hosting_odoo_sh" value="odoo_sh"> Nube dedicada <small>(<a href="https://www.odoo.sh/">Más información en Odoo.sh</a>)</small></label>
+                        </li></label>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="openerp_enterprise_pricing_step">
+                      <div class="openerp_enterprise_pricing_step_head mb16">
+                        <h3 class="mt32 mb16 text-violet-dark"><b>Servicio de</b> implementación</h3>
+                      </div>
+                      <div class="openerp_enterprise_pricing_step_body o_pricing_hosting bg-gray-lighter">
+                        <div class="clearfix mb16">
+                          <ul class="openerp_enterprise_hosting_list">
+                            <li>
+                              <label><input name="implementation_service" type="radio" value="self" class="openerp_enterprise_impl_service" checked="true"> Autoservicio</label>
+                            </li>
+                            <li>
+                              <label class="openerp_enteprise_impl_service_success"><input name="implementation_service" type="radio" value="success_pack" class="openerp_enterprise_impl_service"> Paquetes de éxito de Odoo <small>(se recomienda para una cantidad inferior a 50 usuarios)</small></label>
+                            </li>
+                            <li>
+                              <label><input name="implementation_service" type="radio" value="partner" class="openerp_enterprise_impl_service"> Con un socio local <small>(se recomienda para una cantidad superior a 50 usuarios)</small></label>
+                            </li>
+                          </ul>
+
+                        </div>
+                        <div class="openerp_enterprise_success_packs_info hidden">
+                          <div class="clearfix">
+                            <p class="pull-left mt8">El paquete de éxito que se recomienda para su configuración es el paquete <span class="openerp_enterprise_pricing_pack_name">basic</span> éxito den <b><span class="openerp_enterprise_pricing_pack_time">25</span>
+ horas</b> por
+                              <b><span class="openerp_enterprise_pricing_pack_price">2&nbsp;170,00</span>&nbsp;<span class="openerp_enterprise_pricing_currency">EUR</span></b>
+                            </p>
+                            <a href="/pricing-packs" class="btn btn-primary pull-right" style="position: relative; overflow: hidden;">Leer más</a>
+                          </div>
+                          <div class="js_change_pack well" style="display:none;">
+                            Puedes recomendar un Success Pack haciendo clic aquí:
+                            <div class="btn-group" data-toggle="buttons">
+                              <label class="btn btn-info" style="text-transform: lowercase; overflow: hidden;">
+                                <input type="radio" name="pack" class="packing" id="pack_25" value="25"> 25h
+                              </label>
+                              <label class="btn btn-success" style="text-transform: lowercase; overflow: hidden;">
+                                <input type="radio" name="pack" class="packing" id="pack_50" value="50"> 50h
+                              </label>
+                              <label class="btn btn-primary" style="text-transform: lowercase; overflow: hidden;">
+                                <input type="radio" name="pack" class="packing" id="pack_100" value="100"> 100h
+                              </label>
+                              <label class="btn btn-warning" style="text-transform: lowercase; overflow: hidden;">
+                                <input type="radio" name="pack" class="packing" id="pack_200" value="200"> 200h
+                              </label>
+                              <label class="btn btn-danger" style="text-transform: lowercase; overflow: hidden;">
+                                <input type="radio" name="pack" class="packing" id="pack_auto" value="auto"> auto</label>
+                            </div>
+                          </div>
+                          <input type="hidden" class="js_change_country" name="force_country" value="ES">
+                          <p>Con un Success Pack, se te asignará un experto que te ofrecerá asistencia única personalizada, para ayudarte a personalizar tu solución y optimizar tus procesos de trabajo como parte de tu implementación inicial. Estas horas no expiran, permitiéndote utilizarlas cuando lo necesites.</p>
+                        </div>
+                        <div class="openerp_enterprise_integrating_partner mt8 hidden">
+                          <p>Se recomiendan los socios a empresas que tienen más de 50 usuarios, ya que cuentan con gestión de proyectos, análisis empresariales y experiencia en desarrollo.</p>
+                          <label class="select-label">Select your partner <a href="javascript:;" data-toggle="popover" data-trigger="focus" data-placement="top" title="" data-content="If you do the implementation with an Odoo Partner, please select its name. That way, the Partner can contact our support for your project." data-original-title="Socio de implementación">Why?</a></label>
+                            <select name="integrating_partner_id" class="form-control" tabindex="7">
+                              <option value="0" selected="1">Sin socio integrador</option>
+                              
+                                  <optgroup label="Gold Partner"></optgroup>
+                                  
+                                      <option value="15033">ASELCIS Consulting, S.L.</option>
+                                  
+                                      <option value="1127906">Grant Thornton S.L.P.</option>
+                                  
+                                      <option value="938517">Nanobytes Informática y Telecomunicaciones S.L.</option>
+                                  
+                                      <option value="995356">brain-tec Spain S.L.</option>
+                                  
+                              
+                                  <optgroup label="Silver Partner"></optgroup>
+                                  
+                                      <option value="594311">BB HOSTMARKETING S.L</option>
+                                  
+                                      <option value="965780">Landoo Sistemas de Información</option>
+                                  
+                                      <option value="1155796">SerinCloud S.L.</option>
+                                  
+                              
+                                  <optgroup label="Ready Partner"></optgroup>
+                                  
+                                      <option value="75442">ASERTI GLOBAL SOLUTIONS, S.L.</option>
+                                  
+                                      <option value="721227">AVANZOSC, S.L</option>
+                                  
+                                      <option value="80090">Acysos S.L.</option>
+                                  
+                                      <option value="1097391">Advisors IDM</option>
+                                  
+                                      <option value="20204">Anubía, soluciones en la nube, S.L.</option>
+                                  
+                                      <option value="1031820">CloudAppi</option>
+                                  
+                                      <option value="1023429">Comunitea Servicios Tecnológicos S.L.</option>
+                                  
+                                      <option value="1506080">Consultoría Informática Studio73, S.L.</option>
+                                  
+                                      <option value="21134">Cristián Courbis</option>
+                                  
+                                      <option value="10020">Domatix</option>
+                                  
+                                      <option value="336863">Eficent Business and IT Consulting Services, S.L.</option>
+                                  
+                                      <option value="1482142">Factor Libre</option>
+                                  
+                                      <option value="5271">Fairhall Solutions S.L.</option>
+                                  
+                                      <option value="15183">GuadalTech Soluciones Tecnológicas</option>
+                                  
+                                      <option value="78899">INDAWS</option>
+                                  
+                                      <option value="24248">Ingeniería Open Source S.L.</option>
+                                  
+                                      <option value="1072105">Ingetive</option>
+                                  
+                                      <option value="992340">Kayuulab S.L</option>
+                                  
+                                      <option value="1645988">MELKART OUTSOURCING &amp; BUSINESS, S.L.</option>
+                                  
+                                      <option value="386">Minorisa</option>
+                                  
+                                      <option value="1068807">Nubemsystems,S.L.</option>
+                                  
+                                      <option value="1491517">OFINUBE ASESORES ONLINE S.L.</option>
+                                  
+                                      <option value="2110">OPENTIA S.L.</option>
+                                  
+                                      <option value="1825290">Odoolibre</option>
+                                  
+                                      <option value="1084035">PESOL Consultoría Tecnológica</option>
+                                  
+                                      <option value="22115">PUNT SISTEMES SLU</option>
+                                  
+                                      <option value="597435">Praxya</option>
+                                  
+                                      <option value="1265817">QubiQ</option>
+                                  
+                                      <option value="488882">RGB Consulting</option>
+                                  
+                                      <option value="1679671">SSI Software Solutions                                                                                                                                  _________________________________________________                             </option>
+                                  
+                                      <option value="907545">Tecnativa S.L</option>
+                                  
+                                      <option value="1532020">Tecnihand</option>
+                                  
+                                      <option value="70183">Tecon Soluciones Informáticas</option>
+                                  
+                                      <option value="1560387">TitosConsulting</option>
+                                  
+                                      <option value="1264902">Tundra Consulting </option>
+                                  
+                                      <option value="1494452">WEDOO</option>
+                                  
+                                      <option value="1311522">Ymant Servicios Informaticos SL</option>
+                                  
+                                      <option value="1098556">Zitycard</option>
+                                  
+                                      <option value="519796">aizean evolution, s.l.</option>
+                                  
+                                      <option value="281296">eComm360</option>
+                                  
+                                      <option value="1099633">Éticco Freelosophy, S.L.</option>
+                                  
+                              
+                          </select>
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-xs-12 mt16">
+                    <input type="radio" id="monthly_by" name="price_by" value="monthly" style="display:none;">
+                    <input type="radio" id="yearly_by" name="price_by" value="yearly" style="display:none;" checked="True">
+                    <div class="odoo_pricing_board">
+                      <ul class="nav nav-tabs" style="">
+                        <li class="active" data-type="yearly">
+                          <a data-toggle="tab" href="#yearly">Anualmente</a>
+                        </li>
+                        <li data-type="monthly">
+                          <a data-toggle="tab" href="#monthly">Mensual</a>
+                        </li>
+                        <li data-type="one_app_free" class="hidden">
+                          <a data-toggle="tab" href="#one_app_free">Gratis</a>
+                        </li>
+                      </ul>
+                      <div class="tab-content" style="">
+                        <div class="tab-pane tab-pane-monthly" id="monthly">
+                          <table class="table openerp_enterprise_pricing_table_recurrent" style="white-space:nowrap">
+                            <tbody><tr>
+                              <td><b><span class="openerp_enterprise_pricing_users_num">1</span></b>
+ Usuarios
+                                </td>
+                              <td class="text-right">
+                                <span class="openerp_enterprise_pricing_users_price_monthly">15,00</span>
+                                <span class="openerp_enterprise_pricing_currency">EUR</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                User Discount&nbsp;<sup>(1)</sup>
+                              </td>
+                              <td class="text-right">
+                                <span class="openerp_enterprise_pricing_users_price_discount_monthly text-danger">-2,50</span>
+                                <span class="openerp_enterprise_pricing_currency">EUR</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><b><span class="openerp_enterprise_pricing_apps_num">0</span></b>
+ Aplicaciones
+                                </td>
+                              <td class="text-right">
+                                <span class="openerp_enterprise_pricing_apps_price_monthly">0,00</span>
+                                <span class="openerp_enterprise_pricing_currency">EUR</span>
+                              </td>
+                            </tr>
+                            <tr class="openerp_enterprise_odoo_sh_pricing hidden">
+                              <td>
+                                <b>Odoo.sh Access</b>
+                              </td>
+                              <td class="text-right">
+                                <span class="openerp_enterprise_pricing_odoo_sh_price_monthly">0,00</span>
+                                <span class="openerp_enterprise_pricing_currency">EUR</span>
+                              </td>
+                            </tr>
+                            <tr class="active">
+                              <td><b>Total</b> / mensual
+                                </td>
+                              <td class="text-right">
+                                <b>
+                                  <span class="openerp_enterprise_pricing_price_monthly">12,50</span>
+                                  <span class="openerp_enterprise_pricing_currency">EUR</span>
+                                </b>
+                              </td>
+                            </tr>
+                          </tbody></table>
+                          </div>
+                        <div class="tab-pane tab-pane-yearly active in" id="yearly">
+                          <table class="table" style="white-space:nowrap">
+                            <tbody><tr>
+                              <td><b><span class="openerp_enterprise_pricing_users_num">1</span></b>
+ Usuarios
+                                </td>
+                              <td>
+                                <span class="openerp_enterprise_pricing_users_price_yearly">12,00</span>
+                                <span class="openerp_enterprise_pricing_currency">EUR</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                User Discount&nbsp;<sup>(1)</sup>
+                              </td>
+                              <td class="text-right">
+                                <span class="openerp_enterprise_pricing_users_price_discount_yearly text-danger">-2,00</span>
+                                <span class="openerp_enterprise_pricing_currency">EUR</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><b><span class="openerp_enterprise_pricing_apps_num">0</span></b> 
+ Aplicaciones
+                                </td>
+                              <td>
+                                <span class="openerp_enterprise_pricing_apps_price_yearly">0,00</span>
+                                <span class="openerp_enterprise_pricing_currency">EUR</span>
+                              </td>
+                            </tr>
+                            <tr class="openerp_enterprise_odoo_sh_pricing hidden">
+                              <td>
+                                <b>Odoo.sh Access</b>
+                              </td>
+                              <td class="text-right">
+                                <span class="openerp_enterprise_pricing_odoo_sh_price_yearly">0,00</span>
+                                <span class="openerp_enterprise_pricing_currency">EUR</span>
+                              </td>
+                            </tr>
+                            <tr class="active">
+                              <td><b>Total</b> / month <sup>(2)</sup>
+                                </td>
+                              <td>
+                                <b>
+                                  <span class="openerp_enterprise_pricing_price_yearly">10,00</span>
+                                  <span class="openerp_enterprise_pricing_currency">EUR</span>
+                                </b>
+                              </td>
+                            </tr>
+                          </tbody></table>
+                          <div class="text-center" style="margin-top:-25px">
+                            <p><small><sup>(2)</sup> Billed annually
+                            <span class="openerp_enterprise_pricing_price_yearly_in_year">120,00</span>&nbsp;<span class="openerp_enterprise_pricing_currency">EUR</span>
+                            </small>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="openerp_enterprise_pricing_is_not_free_trial">
+                        <div class="openerp_enterprise_pricing_form_button">
+                          <a class="btn btn-default btn-block" href="https://www.odoo.com/trial" style="position: relative; overflow: hidden;">Pruebalo ahora<br><span style="opacity:0.65;">Prueba gratuita de 15 días</span></a>
+                          <button class="btn btn-primary btn-block openerp_enterprise_pricing_buy_now" type="submit" style="position: relative; overflow: hidden;">Compre ahora</button>
+                          <div class="mt16 alert alert-danger openerp_enterprise_pricing_error_no_apps hidden">
+                          Por favor seleccione al menos una aplicación.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="openerp_enterprise_pricing_is_free_trial hidden">
+                        <p>Estas aplicaciones son <b>gratuitas</b> siempre y cuando no necesite más opciones de alojamiento o aplicaciones.</p>
+                        <a href="#" class="btn btn-primary btn-block mt24 openerp_enterprise_pricing_start_trial_with_app" style="position: relative; overflow: hidden;">comience ahora</a>
+
+                      </div>
+                      <div class="alert alert-danger hidden openerp_enterprise_pricing_monthly_not_allowed">
+                        <p>El plan mensual solo está disponible para opciones de alojamiento en la nube (estándar o dedicado)</p>
+                      </div>
+                      <p class="mt16"><small><sup>(1)</sup> New customers get a discount on the initial number of users purchased.
+                      <span class="openerp_enterprise_user_pricing_yearly">(<span class="openerp_enterprise_pricing_user_amount_yearly">10,00</span>&nbsp;<span class="openerp_enterprise_pricing_currency">EUR</span> en lugar de <span class="openerp_enterprise_pricing_user_amount_yearly_full">12,00</span>&nbsp;<span class="openerp_enterprise_pricing_currency">EUR</span>).</span>
+                      <span class="openerp_enterprise_user_pricing_monthly hidden">(<span class="openerp_enterprise_pricing_user_amount_monthly">12,50</span>&nbsp;<span class="openerp_enterprise_pricing_currency">EUR</span> en lugar de <span class="openerp_enterprise_pricing_user_amount_monthly_full">15,00</span>&nbsp;<span class="openerp_enterprise_pricing_currency">EUR</span>).</span>
+                      </small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </form>
+</body>
+</html>
